@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "aspen",
-  "name": "Domo",
+  "name": "ClerkMinutes",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -11,7 +11,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Documentation",
+        "tab": "Intro",
         "groups": [
           {
             "group": "Getting started",
@@ -22,14 +22,14 @@
             ]
           },
           {
-            "group": "Search & monitor domains",
+            "group": "Features",
             "pages": [
               "essentials/settings",
               "essentials/navigation"
             ]
           },
           {
-            "group": "Organize your domains",
+            "group": "Extra help",
             "pages": [
               "essentials/markdown",
               "essentials/code",
@@ -40,10 +40,18 @@
         ]
       },
       {
-        "tab": "Guides",
+        "tab": "Agendas",
         "groups": [
           {
-            "group": "Buy Domains",
+            "group": "Import agendas",
+            "pages": [
+              "ai-tools/cursor",
+              "ai-tools/claude-code",
+              "ai-tools/windsurf"
+            ]
+          },
+          {
+            "group": "Build agendas",
             "pages": [
               "ai-tools/cursor",
               "ai-tools/claude-code",
@@ -53,7 +61,7 @@
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Recordings & transcripts",
         "groups": [
           {
             "group": "API documentation",
@@ -68,6 +76,27 @@
               "api-reference/endpoint/create",
               "api-reference/endpoint/delete",
               "api-reference/endpoint/webhook"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Minutes",
+        "groups": [
+          {
+            "group": "Generate minutes",
+            "pages": [
+              "ai-tools/cursor",
+              "ai-tools/claude-code",
+              "ai-tools/windsurf"
+            ]
+          },
+          {
+            "group": "Extra features",
+            "pages": [
+              "ai-tools/cursor",
+              "ai-tools/claude-code",
+              "ai-tools/windsurf"
             ]
           }
         ]
@@ -91,13 +120,13 @@
     "links": [
       {
         "label": "Support",
-        "href": "https://dmns.app/contact"
+        "href": "https://clerkminutes.com/contact"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dmns.app"
+      "label": "Open ClerkMinutes",
+      "href": "https://app.heygov.com/account/login?redirect=%2F%3Ajurisdiction%2Fmeetings&for=clerkminutes"
     }
   },
   "contextual": {
