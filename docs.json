@@ -3,7 +3,7 @@
   "theme": "aspen",
   "name": "ClerkMinutes",
   "colors": {
-    "primary": "#16A34A",
+    "primary": "#0091ff",
     "light": "#07C983",
     "dark": "#15803D"
   },
@@ -22,19 +22,40 @@
             ]
           },
           {
-            "group": "Features",
+            "group": "Department & members",
             "pages": [
               "essentials/settings",
               "essentials/navigation"
             ]
           },
           {
-            "group": "Extra help",
+            "group": "Billing & features",
             "pages": [
               "essentials/markdown",
               "essentials/code",
               "essentials/images",
               "essentials/reusable-snippets"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Meetings",
+        "groups": [
+          {
+            "group": "Create & schedule meetings",
+            "pages": [
+              "ai-tools/cursor",
+              "ai-tools/claude-code",
+              "ai-tools/windsurf"
+            ]
+          },
+          {
+            "group": "Share/Publish on website",
+            "pages": [
+              "ai-tools/cursor",
+              "ai-tools/claude-code",
+              "ai-tools/windsurf"
             ]
           }
         ]
@@ -61,7 +82,7 @@
         ]
       },
       {
-        "tab": "Recordings & transcripts",
+        "tab": "Recordings & Transcripts",
         "groups": [
           {
             "group": "API documentation",
