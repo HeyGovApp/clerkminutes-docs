@@ -46,7 +46,7 @@
           {
             "group": "Minutes",
             "pages": [
-              "api-reference/introduction"
+              "minutes/introduction"
             ]
           },
           {
