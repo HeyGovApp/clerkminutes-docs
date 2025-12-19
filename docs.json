@@ -11,13 +11,20 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Intro",
+        "tab": "Documentation",
         "groups": [
           {
             "group": "Getting started",
             "pages": [
               "index",
               "sign-up"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/agenda",
+              "guides/minutes"
             ]
           },
           {
