@@ -28,6 +28,28 @@
             ]
           },
           {
+            "group": "Meetings",
+            "pages": [
+              "ai-tools/cursor",
+              "ai-tools/claude-code",
+              "ai-tools/windsurf"
+            ]
+          },
+          {
+            "group": "Agendas",
+            "pages": [
+              "ai-tools/cursor",
+              "ai-tools/claude-code",
+              "ai-tools/windsurf"
+            ]
+          },
+          {
+            "group": "Minutes",
+            "pages": [
+              "api-reference/introduction"
+            ]
+          },
+          {
             "group": "Department & members",
             "pages": [
               "departments-members/departments",
@@ -44,80 +66,10 @@
         ]
       },
       {
-        "tab": "Meetings",
-        "groups": [
-          {
-            "group": "Create & schedule meetings",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          },
-          {
-            "group": "Share/Publish on website",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Agendas",
+        "tab": "Guides",
         "groups": [
           {
             "group": "Import agendas",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          },
-          {
-            "group": "Build agendas",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Recordings & Transcripts",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Minutes",
-        "groups": [
-          {
-            "group": "Generate minutes",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          },
-          {
-            "group": "Extra features",
             "pages": [
               "ai-tools/cursor",
               "ai-tools/claude-code",
