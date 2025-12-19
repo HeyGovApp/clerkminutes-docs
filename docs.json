@@ -7,47 +7,55 @@
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/favicon.svg"
-    {
-      "group": "Getting started",
-      "pages": [
-        "getting-started/invite-team",
-        "getting-started/create-meeting"
-      ]
-    },
-    {
-      "group": "Manage agenda",
-      "pages": [
-        "agenda/create-edit-items"
-      ]
-    },
-    {
-      "group": "Recording, transcript & speakers",
-      "pages": [
-        "recording/upload-transcribe",
-        "recording/bulk-assign-speakers",
-        "recording/assign-speakers",
-        "recording/change-speaker-number"
-      ]
-    },
-    {
-      "group": "Manage minutes",
-      "pages": [
-        "minutes/regenerate-draft",
-        "minutes/add-details-ai",
-        "minutes/publish",
-        "minutes/custom-instructions"
-      ]
-    },
-    {
-      "group": "Plans & Support",
-      "pages": [
-        "support/choose-plan-pay",
-        "support/refer-a-clerk",
-        "support/faqs"
-      ]
-    }
-  ],
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Help articles",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "getting-started/invite-team",
+              "getting-started/create-meeting"
+            ]
+          },
+          {
+            "group": "Manage agenda",
+            "pages": [
+              "agenda/create-edit-items"
+            ]
+          },
+          {
+            "group": "Recording, transcript & speakers",
+            "pages": [
+              "recording/upload-transcribe",
+              "recording/bulk-assign-speakers",
+              "recording/assign-speakers",
+              "recording/change-speaker-number"
+            ]
+          },
+          {
+            "group": "Manage minutes",
+            "pages": [
+              "minutes/regenerate-draft",
+              "minutes/add-details-ai",
+              "minutes/publish",
+              "minutes/custom-instructions"
+            ]
+          },
+          {
+            "group": "Plans & Support",
+            "pages": [
+              "support/choose-plan-pay",
+              "support/refer-a-clerk",
+              "support/faqs"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
