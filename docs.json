@@ -17,13 +17,9 @@
             "group": "Getting Started",
             "pages": [
               "getting-started/invite-team"
+              "getting-started/create-meeting"
             ]
           },
-          {
-            "group": "How to",
-            "pages": [
-              "how-to/create-meeting"
-            ]
           },
           {
             "group": "Manage agenda",
