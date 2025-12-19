@@ -17,19 +17,18 @@
             "group": "Getting started",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "sign-up"
             ]
           },
           {
             "group": "Department & members",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "departments-members/departments",
+              "departments-members/create"
             ]
           },
           {
-            "group": "Billing & features",
+            "group": "Plans & billing",
             "pages": [
               "essentials/markdown",
               "essentials/code",
