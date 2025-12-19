@@ -11,69 +11,50 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Documentation",
+        "tab": "Help articles",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Getting Started",
             "pages": [
-              "index",
-              "sign-up"
+              "getting-started/invite-team"
             ]
           },
           {
-            "group": "Quick guides",
+            "group": "How to",
             "pages": [
-              "guides/agenda",
-              "guides/minutes"
+              "how-to/create-meeting"
             ]
           },
           {
-            "group": "Meetings",
+            "group": "Manage agenda",
             "pages": [
-              "meetings/create",
-              "meetings/schedule",
-              "meetings/embed"
+              "agenda/create-edit-items"
             ]
           },
           {
-            "group": "Agendas",
+            "group": "Recording, transcript & speakers",
             "pages": [
-              "agendas/import",
-              "agendas/build",
-              "agendas/collaborate"
+              "recording/upload-transcribe",
+              "recording/bulk-assign-speakers",
+              "recording/assign-speakers",
+              "recording/change-speaker-number"
             ]
           },
           {
-            "group": "Minutes",
+            "group": "Manage minutes",
             "pages": [
-              "minutes/introduction"
+              "minutes/regenerate-draft",
+              "minutes/add-details-ai",
+              "minutes/publish",
+              "minutes/custom-instructions"
             ]
           },
           {
-            "group": "Department & members",
+            "group": "Plans & Support",
             "pages": [
-              "departments-members/departments",
-              "departments-members/create"
-            ]
-          },
-          {
-            "group": "Plans & billing",
-            "pages": [
-              "billing/choose-plan",
-              "billing/switch-plan"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Import agendas",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "support/choose-plan-pay",
+              "support/refer-a-clerk",
+              "support/faqs"
             ]
           }
         ]
@@ -99,15 +80,15 @@
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
