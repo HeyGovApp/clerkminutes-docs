@@ -38,9 +38,9 @@
           {
             "group": "Agendas",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "agendas/import",
+              "agendas/build",
+              "agendas/collaborate"
             ]
           },
           {
