@@ -16,17 +16,22 @@
           {
             "group": "Getting started",
             "pages": [
-              "getting-started/introduction"
+              "index"
             ]
           },
           {
             "group": "Quick guides",
-            "pages": []
+            "pages": [
+              "guides/minutes",
+              "guides/agenda"
+            ]
           },
           {
             "group": "Meetings",
             "pages": [
-              "getting-started/create-meeting"
+              "meetings/create",
+              "meetings/schedule",
+              "meetings/embed"
             ]
           },
           {
@@ -94,10 +99,7 @@
       "view",
       "chatgpt",
       "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+      "perplexity"
     ]
   },
   "footer": {
