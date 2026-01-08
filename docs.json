@@ -11,23 +11,32 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Help articles",
+        "tab": "Documentation",
         "groups": [
           {
-            "group": "Getting Started",
+            "group": "Getting started",
             "pages": [
-              "getting-started/invite-team",
+              "getting-started/introduction"
+            ]
+          },
+          {
+            "group": "Quick guides",
+            "pages": []
+          },
+          {
+            "group": "Meetings",
+            "pages": [
               "getting-started/create-meeting"
             ]
           },
           {
-            "group": "Manage agenda",
+            "group": "Agendas",
             "pages": [
               "agenda/create-edit-items"
             ]
           },
           {
-            "group": "Recording, transcript & speakers",
+            "group": "Recordings & transcripts",
             "pages": [
               "recording/upload-transcribe",
               "recording/bulk-assign-speakers",
@@ -36,7 +45,7 @@
             ]
           },
           {
-            "group": "Manage minutes",
+            "group": "Meeting minutes",
             "pages": [
               "minutes/regenerate-draft",
               "minutes/add-details-ai",
@@ -45,7 +54,13 @@
             ]
           },
           {
-            "group": "Plans & Support",
+            "group": "Departments & members",
+            "pages": [
+              "getting-started/invite-team"
+            ]
+          },
+          {
+            "group": "Plans & billing",
             "pages": [
               "support/choose-plan-pay",
               "support/refer-a-clerk",
