@@ -9,56 +9,47 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "products": [
+    "tabs": [
       {
-        "product": "Cle",
-        "tabs": [
+        "tab": "Help articles",
+        "groups": [
           {
-            "tab": "Documentation",
-            "groups": [
-              {
-                "group": "Getting Started",
-                "pages": [
-                  "getting-started/invite-team",
-                  "getting-started/create-meeting"
-                ]
-              },
-              {
-                "group": "Quick guides",
-                "pages": []
-              },
-              {
-                "group": "Manage agenda",
-                "pages": [
-                  "agenda/create-edit-items"
-                ]
-              },
-              {
-                "group": "Recording, transcript & speakers",
-                "pages": [
-                  "recording/upload-transcribe",
-                  "recording/bulk-assign-speakers",
-                  "recording/assign-speakers",
-                  "recording/change-speaker-number"
-                ]
-              },
-              {
-                "group": "Manage minutes",
-                "pages": [
-                  "minutes/regenerate-draft",
-                  "minutes/add-details-ai",
-                  "minutes/publish",
-                  "minutes/custom-instructions"
-                ]
-              },
-              {
-                "group": "Plans & Billing",
-                "pages": [
-                  "support/choose-plan-pay",
-                  "support/refer-a-clerk",
-                  "support/faqs"
-                ]
-              }
+            "group": "Getting Started",
+            "pages": [
+              "getting-started/invite-team",
+              "getting-started/create-meeting"
+            ]
+          },
+          {
+            "group": "Manage agenda",
+            "pages": [
+              "agenda/create-edit-items"
+            ]
+          },
+          {
+            "group": "Recording, transcript & speakers",
+            "pages": [
+              "recording/upload-transcribe",
+              "recording/bulk-assign-speakers",
+              "recording/assign-speakers",
+              "recording/change-speaker-number"
+            ]
+          },
+          {
+            "group": "Manage minutes",
+            "pages": [
+              "minutes/regenerate-draft",
+              "minutes/add-details-ai",
+              "minutes/publish",
+              "minutes/custom-instructions"
+            ]
+          },
+          {
+            "group": "Plans & Support",
+            "pages": [
+              "support/choose-plan-pay",
+              "support/refer-a-clerk",
+              "support/faqs"
             ]
           }
         ]
