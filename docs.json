@@ -37,7 +37,9 @@
           {
             "group": "Agendas",
             "pages": [
-              "agenda/create-edit-items"
+              "agendas/import",
+              "agendas/build",
+              "agendas/collaborate"
             ]
           },
           {
