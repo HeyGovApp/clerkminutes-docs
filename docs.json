@@ -12,15 +12,11 @@
     "tabs": [
       {
         "tab": "Documentation",
-        "groups": [
+        "pages": [
+          "index",
           {
             "group": "Getting started",
-            "pages": [
-              "index"
-            ]
-          },
-          {
-            "group": "Quick guides",
+            "expanded": true,
             "pages": [
               "guides/minutes",
               "guides/agenda"
