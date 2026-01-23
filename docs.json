@@ -110,8 +110,5 @@
   "appearance": {
     "strict": true,
     "default": "system"
-  },
-  "banner": {
-    "content": "ClerkMinutes v3 coming soon"
   }
 }
