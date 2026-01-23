@@ -80,7 +80,7 @@
   },
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/logo/light.svg"
   },
   "navbar": {
     "links": [
@@ -110,5 +110,12 @@
       "linkedin": "https://www.linkedin.com/company/heygov",
       "youtube": "https://www.youtube.com/@heygovapp"
     }
+  },
+  "appearance": {
+    "strict": true,
+    "default": "system"
+  },
+  "banner": {
+    "content": "ClerkMinutes v3 coming soon"
   }
 }
