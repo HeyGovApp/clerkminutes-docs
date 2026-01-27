@@ -63,17 +63,18 @@
             ]
           },
           {
-            "group": "Departments & members",
+            "group": "Account",
             "pages": [
-              "getting-started/invite-team"
-            ]
-          },
-          {
-            "group": "Plans & billing",
-            "pages": [
-              "support/choose-plan-pay",
-              "support/refer-a-clerk",
-              "support/faqs"
+              "documentation/account/departments",
+              "getting-started/invite-team",
+              {
+                "group": "Billing",
+                "pages": [
+                  "support/choose-plan-pay",
+                  "support/refer-a-clerk",
+                  "support/faqs"
+                ]
+              }
             ]
           }
         ]
