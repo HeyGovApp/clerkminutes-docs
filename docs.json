@@ -13,13 +13,19 @@
       {
         "tab": "Documentation",
         "pages": [
-          "index",
           {
             "group": "Getting started",
             "expanded": true,
             "pages": [
-              "guides/minutes",
-              "guides/agenda"
+              "index",
+              {
+                "group": "Quick Start",
+                "pages": [
+                  "guides/minutes",
+                  "guides/agenda"
+                ]
+              },
+              "documentation/getting-started/concepts"
             ]
           },
           {
