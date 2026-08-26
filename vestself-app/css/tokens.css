@@ -1,0 +1,148 @@
+/* ============================================================
+   Vest Self — Design Tokens
+   Derived from the Vest Self brand system used on vestself.app:
+   gold-led, dark-first, warm off-white ink. Voice: premium,
+   disciplined, human.
+   ============================================================ */
+
+/* Satoshi, when it is available. No @font-face with a url() is declared here
+   because the licensed files are not redistributed with this repo — the stack
+   below picks up a locally installed Satoshi and otherwise falls back to the
+   platform UI face, with no failed network request either way.
+
+   To self-host: drop Satoshi-{Regular,Medium,Bold,Black}.woff2 into
+   assets/fonts/ and uncomment this block.
+
+@font-face { font-family: "Satoshi"; src: url("../assets/fonts/Satoshi-Regular.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Satoshi"; src: url("../assets/fonts/Satoshi-Medium.woff2")  format("woff2"); font-weight: 500; font-display: swap; }
+@font-face { font-family: "Satoshi"; src: url("../assets/fonts/Satoshi-Bold.woff2")    format("woff2"); font-weight: 600 700; font-display: swap; }
+@font-face { font-family: "Satoshi"; src: url("../assets/fonts/Satoshi-Black.woff2")   format("woff2"); font-weight: 800 900; font-display: swap; }
+*/
+
+:root {
+  /* ---------- brand primaries ---------- */
+  --off-white:      #FFFCF5;
+  --gold:           #E6C15A;
+  --gold-variant:   #D8B518;
+  --midnight:       #111111;
+  --lightning-gold: #FFC919;
+  --champagne:      #F9F1C8;
+  --oregon:         #9C3807;
+  --void:           #0A0A0F;
+
+  --brand:        var(--gold);
+  --brand-strong: var(--gold-variant);
+  --brand-bright: var(--lightning-gold);
+  --brand-soft:   rgba(230, 193, 90, 0.16);
+
+  /* ---------- accents ---------- */
+  --accent-purple: #A13CFF;
+  --accent-blue:   #0E6BFF;
+  --accent-pink:   #DB139C;
+  --accent-orange: #EA671B;
+  --accent-green:  #0E9C32;
+
+  /* ---------- ink scale ---------- */
+  --ink-50:  #F7F4EC;
+  --ink-100: #ECE9E1;
+  --ink-300: #B4B1AA;
+  --ink-500: #646159;
+  --ink-700: #2E2C28;
+  --ink-800: #1C1A18;
+  --ink-900: #111111;
+  --ink-950: #0A0A0F;
+
+  /* ---------- gradients ---------- */
+  --grad-brand: linear-gradient(135deg, #FFC919 0%, #9C3807 55%, #0A0A0F 100%);
+  --grad-gold:  linear-gradient(135deg, #FFC919 0%, #E6C15A 100%);
+  --grad-energy:     radial-gradient(120% 120% at 8% 8%,  #FFC919 0%, #EA671B 38%, rgba(10,10,15,0) 82%);
+  --grad-focus:      radial-gradient(120% 120% at 92% 8%, #488FFF 0%, #0E6BFF 36%, rgba(10,10,15,0) 82%);
+  --grad-growth:     radial-gradient(120% 120% at 8% 92%, #48B463 0%, #0E9C32 36%, rgba(10,10,15,0) 82%);
+  --grad-discipline: radial-gradient(120% 120% at 92% 92%, #B86BFF 0%, #A13CFF 36%, rgba(10,10,15,0) 82%);
+
+  /* the signature neon bloom, rising from a card's bottom edge */
+  --neon-bloom:
+    radial-gradient(62% 130% at 14% 124%, #8B2BFF 0%, #8B2BFF 18%, rgba(139,43,255,0) 72%),
+    radial-gradient(70% 130% at 46% 128%, #DB139C 0%, #DB139C 20%, rgba(219,19,156,0) 72%),
+    radial-gradient(84% 142% at 83% 120%, #EA671B 0%, #EA671B 22%, rgba(234,103,27,0) 74%),
+    radial-gradient(54% 104% at 66% 134%, #FFC919 0%, #FFC919 16%, rgba(255,201,25,0) 66%);
+
+  /* ---------- surfaces (dark, default) ---------- */
+  --bg:          var(--void);
+  --bg-elevated: var(--midnight);
+  --bg-card:     #16161B;
+  --surface-1:   rgba(255, 252, 245, 0.04);
+  --surface-2:   rgba(255, 252, 245, 0.06);
+  --surface-3:   rgba(255, 252, 245, 0.09);
+  --overlay:     rgba(10, 10, 15, 0.74);
+
+  --fg-1: #FFFCF5;
+  --fg-2: rgba(255, 252, 245, 0.74);
+  --fg-3: rgba(255, 252, 245, 0.52);
+  --fg-4: rgba(255, 252, 245, 0.34);
+  --fg-on-brand: #111111;
+
+  --border-1: rgba(255, 252, 245, 0.08);
+  --border-2: rgba(255, 252, 245, 0.14);
+  --border-3: rgba(255, 252, 245, 0.22);
+
+  /* ---------- state ---------- */
+  --success:   var(--accent-green);   --success-bg: rgba(14, 156, 50, 0.14);
+  --warning:   var(--accent-orange);  --warning-bg: rgba(234, 103, 27, 0.16);
+  --danger:    #E5484D;               --danger-bg:  rgba(229, 72, 77, 0.15);
+  --info:      var(--accent-blue);    --info-bg:    rgba(14, 107, 255, 0.14);
+
+  /* ---------- type ---------- */
+  --font-sans: "Satoshi", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+
+  --text-hero: 76px;  --lh-hero: 80px;
+  --text-h1:   48px;  --lh-h1:   56px;
+  --text-h2:   32px;  --lh-h2:   40px;
+  --text-h3:   24px;  --lh-h3:   32px;
+  --text-h4:   20px;  --lh-h4:   28px;
+  --text-body: 16px;  --lh-body: 24px;
+  --text-sm:   14px;  --lh-sm:   20px;
+  --text-xs:   12px;  --lh-xs:   16px;
+
+  --tracking-tight: -0.02em;
+  --tracking-snug:  -0.01em;
+  --tracking-wider:  0.12em;
+
+  /* ---------- space / radius ---------- */
+  --space-1: 4px;  --space-2: 8px;  --space-3: 12px; --space-4: 16px;
+  --space-5: 20px; --space-6: 24px; --space-8: 32px; --space-10: 40px;
+  --space-12: 48px; --space-16: 64px; --space-20: 80px;
+
+  --radius-xs: 8px;  --radius-sm: 12px; --radius-md: 16px;
+  --radius-lg: 20px; --radius-xl: 28px; --radius-pill: 999px;
+
+  /* ---------- elevation ---------- */
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.40);
+  --shadow-md: 0 12px 28px -10px rgba(0, 0, 0, 0.58);
+  --shadow-lg: 0 28px 60px -20px rgba(0, 0, 0, 0.72);
+  --glow-gold: 0 0 40px -8px rgba(255, 201, 25, 0.50), 0 8px 24px -8px rgba(230, 193, 90, 0.40);
+  --ring-focus: 0 0 0 3px rgba(230, 193, 90, 0.42);
+
+  /* ---------- motion ---------- */
+  --ease-standard:   cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-emphasized: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 140ms; --dur-base: 220ms; --dur-slow: 360ms;
+
+  --container: 1120px;
+
+  color-scheme: dark;
+}
+
+@media (max-width: 720px) {
+  :root {
+    --text-hero: 44px; --lh-hero: 48px;
+    --text-h1:   34px; --lh-h1:   42px;
+    --text-h2:   26px; --lh-h2:   34px;
+    --text-h3:   20px; --lh-h3:   28px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --dur-fast: 0ms; --dur-base: 0ms; --dur-slow: 0ms; }
+}
