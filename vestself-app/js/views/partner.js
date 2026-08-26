@@ -32,7 +32,7 @@ export function partnerView(goal, { rerender }) {
     el("div", { style: { marginTop: "var(--space-10)" } },
       sectionHead("Your progress card", "For the group chat, the feed, or your own wall.",
         el("div.row",
-          el("button.btn.btn-ghost.btn-sm", { type: "button", onClick: () => downloadCard(goal, progress) }, icon("download"), "Download"),
+          el("button.btn.btn-ghost.btn-sm", { type: "button", onClick: () => downloadCard(goal, progress) }, icon("download"), "Save card"),
           el("button.btn.btn-gold.btn-sm", { type: "button", onClick: () => shareCard(goal, progress) }, icon("share"), "Share"))),
       cardPreview(goal, progress)),
 
@@ -266,19 +266,34 @@ function renderCardPNG(goal, progress) {
   });
 }
 
+/**
+ * Show the rendered card full size with an explicit save link.
+ *
+ * A click-the-hidden-anchor download is silently ignored in a sandboxed frame
+ * and on mobile Safari, so the card is put on screen and saving is left to the
+ * user — a link they can click, or long-press on a phone. That works
+ * everywhere, and it lets them see what they're about to post.
+ */
 async function downloadCard(goal, progress) {
+  let url;
   try {
-    const blob = await renderCardPNG(goal, progress);
-    const url = URL.createObjectURL(blob);
-    const link = el("a", { href: url, download: `vest-self-${goal.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").slice(0, 40)}.png` });
-    document.body.appendChild(link);
-    link.click();
-    link.remove();
-    setTimeout(() => URL.revokeObjectURL(url), 1000);
-    toast("Card downloaded", "download");
+    url = URL.createObjectURL(await renderCardPNG(goal, progress));
   } catch {
     toast("Could not render the card", "warning");
+    return;
   }
+  const name = `vest-self-${goal.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").slice(0, 40)}.png`;
+  const dialog = openModal({
+    title: "Your card",
+    body: el("div.stack",
+      el("img.proof-preview", { src: url, alt: "Your progress card" }),
+      el("p.hint", "Click save below, or long-press the image on a phone.")),
+    actions: [
+      el("a.btn.btn-gold", { href: url, download: name, target: "_blank", rel: "noopener" }, icon("download"), "Save image"),
+    ],
+    onClose: () => setTimeout(() => URL.revokeObjectURL(url), 2000),
+  });
+  return dialog;
 }
 
 async function shareCard(goal, progress) {
